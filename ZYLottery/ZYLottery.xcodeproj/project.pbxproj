@@ -10,7 +10,6 @@
 		A39D3FF11FA08983003D5BB3 /* ZYLottery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A39D3FEF1FA08983003D5BB3 /* ZYLottery.xcdatamodeld */; };
 		A39D3FF31FA08983003D5BB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A39D3FF21FA08983003D5BB3 /* Assets.xcassets */; };
 		A39D3FF61FA08983003D5BB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39D3FF41FA08983003D5BB3 /* LaunchScreen.storyboard */; };
-		A3ACE1921FA08FA600D043D0 /* ZYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ACE1911FA08FA600D043D0 /* ZYTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +21,6 @@
 		A3ACE18B1FA08E2300D043D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A3ACE18C1FA08E2300D043D0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A3ACE18F1FA08E2300D043D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A3ACE1901FA08FA600D043D0 /* ZYTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYTestViewController.h; sourceTree = "<group>"; };
-		A3ACE1911FA08FA600D043D0 /* ZYTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +97,6 @@
 		A3ACE1731FA08E2300D043D0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A3ACE1901FA08FA600D043D0 /* ZYTestViewController.h */,
-				A3ACE1911FA08FA600D043D0 /* ZYTestViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -372,7 +367,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A39D3FF11FA08983003D5BB3 /* ZYLottery.xcdatamodeld in Sources */,
-				A3ACE1921FA08FA600D043D0 /* ZYTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
