@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ZYTabBarVC.h"
 
 @interface AppDelegate ()
 
@@ -39,17 +40,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     // 创建窗口根控制器
-    UITabBarController *tabBarVc = [[UITabBarController alloc] init];
-    self.window.rootViewController = tabBarVc;
-    
-    // 添加子控制器
-    UIViewController *vc = [[UIViewController alloc] init];
-    [tabBarVc addChildViewController:vc];
-    vc.view.backgroundColor = [UIColor yellowColor];
-    
-    UIViewController *vc1 = [[UIViewController alloc] init];
-    [tabBarVc addChildViewController:vc1];
-    vc1.view.backgroundColor = [UIColor greenColor];
+    UITabBarController *tabBarVC = [[ZYTabBarVC alloc] init];
+    self.window.rootViewController = tabBarVC;
     
     // 显示窗口
     [self.window makeKeyAndVisible];

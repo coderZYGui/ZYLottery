@@ -10,6 +10,15 @@
 		A39D3FF11FA08983003D5BB3 /* ZYLottery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A39D3FEF1FA08983003D5BB3 /* ZYLottery.xcdatamodeld */; };
 		A39D3FF31FA08983003D5BB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A39D3FF21FA08983003D5BB3 /* Assets.xcassets */; };
 		A39D3FF61FA08983003D5BB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39D3FF41FA08983003D5BB3 /* LaunchScreen.storyboard */; };
+		A3ACE1951FA0918000D043D0 /* ZYTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ACE1941FA0918000D043D0 /* ZYTabBarVC.m */; };
+		A3ACE1981FA094AC00D043D0 /* ZYHallTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ACE1971FA094AC00D043D0 /* ZYHallTableViewController.m */; };
+		A3ACE19B1FA094DE00D043D0 /* ZYArenaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ACE19A1FA094DE00D043D0 /* ZYArenaViewController.m */; };
+		A3ACE19E1FA0951E00D043D0 /* ZYDiscoverTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ACE19D1FA0951E00D043D0 /* ZYDiscoverTableTableViewController.m */; };
+		A3ACE1A11FA0954D00D043D0 /* ZYHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ACE1A01FA0954D00D043D0 /* ZYHistoryTableViewController.m */; };
+		A3ACE1A41FA0956400D043D0 /* ZYMyLotteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ACE1A31FA0956400D043D0 /* ZYMyLotteryViewController.m */; };
+		A3ACE1A51FA098EB00D043D0 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = A3ACE18B1FA08E2300D043D0 /* AppDelegate.h */; };
+		A3ACE1A61FA098EB00D043D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ACE18C1FA08E2300D043D0 /* AppDelegate.m */; };
+		A3ACE1A71FA098EB00D043D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ACE18F1FA08E2300D043D0 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +30,18 @@
 		A3ACE18B1FA08E2300D043D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A3ACE18C1FA08E2300D043D0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A3ACE18F1FA08E2300D043D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A3ACE1931FA0918000D043D0 /* ZYTabBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYTabBarVC.h; sourceTree = "<group>"; };
+		A3ACE1941FA0918000D043D0 /* ZYTabBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYTabBarVC.m; sourceTree = "<group>"; };
+		A3ACE1961FA094AC00D043D0 /* ZYHallTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYHallTableViewController.h; sourceTree = "<group>"; };
+		A3ACE1971FA094AC00D043D0 /* ZYHallTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYHallTableViewController.m; sourceTree = "<group>"; };
+		A3ACE1991FA094DE00D043D0 /* ZYArenaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYArenaViewController.h; sourceTree = "<group>"; };
+		A3ACE19A1FA094DE00D043D0 /* ZYArenaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYArenaViewController.m; sourceTree = "<group>"; };
+		A3ACE19C1FA0951E00D043D0 /* ZYDiscoverTableTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYDiscoverTableTableViewController.h; sourceTree = "<group>"; };
+		A3ACE19D1FA0951E00D043D0 /* ZYDiscoverTableTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYDiscoverTableTableViewController.m; sourceTree = "<group>"; };
+		A3ACE19F1FA0954D00D043D0 /* ZYHistoryTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYHistoryTableViewController.h; sourceTree = "<group>"; };
+		A3ACE1A01FA0954D00D043D0 /* ZYHistoryTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYHistoryTableViewController.m; sourceTree = "<group>"; };
+		A3ACE1A21FA0956400D043D0 /* ZYMyLotteryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYMyLotteryViewController.h; sourceTree = "<group>"; };
+		A3ACE1A31FA0956400D043D0 /* ZYMyLotteryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYMyLotteryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,11 +94,11 @@
 		A3ACE1711FA08E2300D043D0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A3ACE1821FA08E2300D043D0 /* Main(主要) */,
+				A3ACE17A1FA08E2300D043D0 /* Hall(购彩大厅) */,
 				A3ACE1721FA08E2300D043D0 /* Arena(竞技场) */,
 				A3ACE1761FA08E2300D043D0 /* Discover(发现) */,
-				A3ACE17A1FA08E2300D043D0 /* Hall(购彩大厅) */,
 				A3ACE17E1FA08E2300D043D0 /* History(开奖信息) */,
-				A3ACE1821FA08E2300D043D0 /* Main(主要) */,
 				A3ACE1861FA08E2300D043D0 /* MyLottery(我的彩票) */,
 				A3ACE18A1FA08E2300D043D0 /* Other */,
 			);
@@ -97,6 +118,8 @@
 		A3ACE1731FA08E2300D043D0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A3ACE1991FA094DE00D043D0 /* ZYArenaViewController.h */,
+				A3ACE19A1FA094DE00D043D0 /* ZYArenaViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -128,6 +151,8 @@
 		A3ACE1771FA08E2300D043D0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A3ACE19C1FA0951E00D043D0 /* ZYDiscoverTableTableViewController.h */,
+				A3ACE19D1FA0951E00D043D0 /* ZYDiscoverTableTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -159,6 +184,8 @@
 		A3ACE17B1FA08E2300D043D0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A3ACE1961FA094AC00D043D0 /* ZYHallTableViewController.h */,
+				A3ACE1971FA094AC00D043D0 /* ZYHallTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -190,6 +217,8 @@
 		A3ACE17F1FA08E2300D043D0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A3ACE19F1FA0954D00D043D0 /* ZYHistoryTableViewController.h */,
+				A3ACE1A01FA0954D00D043D0 /* ZYHistoryTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -221,6 +250,8 @@
 		A3ACE1831FA08E2300D043D0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A3ACE1931FA0918000D043D0 /* ZYTabBarVC.h */,
+				A3ACE1941FA0918000D043D0 /* ZYTabBarVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -252,6 +283,8 @@
 		A3ACE1871FA08E2300D043D0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A3ACE1A21FA0956400D043D0 /* ZYMyLotteryViewController.h */,
+				A3ACE1A31FA0956400D043D0 /* ZYMyLotteryViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -322,7 +355,8 @@
 		A39D3FD81FA08982003D5BB3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				CLASSPREFIX = ZY;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = sunny;
 				TargetAttributes = {
 					A39D3FDF1FA08982003D5BB3 = {
@@ -366,7 +400,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3ACE1A51FA098EB00D043D0 /* AppDelegate.h in Sources */,
+				A3ACE1A61FA098EB00D043D0 /* AppDelegate.m in Sources */,
+				A3ACE1A71FA098EB00D043D0 /* main.m in Sources */,
+				A3ACE19E1FA0951E00D043D0 /* ZYDiscoverTableTableViewController.m in Sources */,
+				A3ACE1A41FA0956400D043D0 /* ZYMyLotteryViewController.m in Sources */,
+				A3ACE1A11FA0954D00D043D0 /* ZYHistoryTableViewController.m in Sources */,
 				A39D3FF11FA08983003D5BB3 /* ZYLottery.xcdatamodeld in Sources */,
+				A3ACE1981FA094AC00D043D0 /* ZYHallTableViewController.m in Sources */,
+				A3ACE1951FA0918000D043D0 /* ZYTabBarVC.m in Sources */,
+				A3ACE19B1FA094DE00D043D0 /* ZYArenaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,7 +437,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -402,7 +447,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -442,7 +491,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -450,7 +501,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
