@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A39D3FF11FA08983003D5BB3 /* ZYLottery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A39D3FEF1FA08983003D5BB3 /* ZYLottery.xcdatamodeld */; };
+		A39D3FF31FA08983003D5BB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A39D3FF21FA08983003D5BB3 /* Assets.xcassets */; };
+		A39D3FF61FA08983003D5BB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39D3FF41FA08983003D5BB3 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A39D3FE01FA08983003D5BB3 /* ZYLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A39D3FF01FA08983003D5BB3 /* ZYLottery.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZYLottery.xcdatamodel; sourceTree = "<group>"; };
+		A39D3FF21FA08983003D5BB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A39D3FF51FA08983003D5BB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A39D3FF71FA08983003D5BB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3ACE18B1FA08E2300D043D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A3ACE18C1FA08E2300D043D0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A3ACE18F1FA08E2300D043D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A39D3FDD1FA08982003D5BB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A39D3FD71FA08982003D5BB3 = {
+			isa = PBXGroup;
+			children = (
+				A39D3FE21FA08983003D5BB3 /* ZYLottery */,
+				A39D3FE11FA08983003D5BB3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A39D3FE11FA08983003D5BB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A39D3FE01FA08983003D5BB3 /* ZYLottery.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A39D3FE21FA08983003D5BB3 /* ZYLottery */ = {
+			isa = PBXGroup;
+			children = (
+				A3ACE1711FA08E2300D043D0 /* Classes */,
+				A39D3FF21FA08983003D5BB3 /* Assets.xcassets */,
+				A39D3FF41FA08983003D5BB3 /* LaunchScreen.storyboard */,
+				A39D3FF71FA08983003D5BB3 /* Info.plist */,
+				A39D3FEF1FA08983003D5BB3 /* ZYLottery.xcdatamodeld */,
+				A39D3FE31FA08983003D5BB3 /* Supporting Files */,
+			);
+			path = ZYLottery;
+			sourceTree = "<group>";
+		};
+		A39D3FE31FA08983003D5BB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3ACE1711FA08E2300D043D0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A3ACE1721FA08E2300D043D0 /* Arena(竞技场) */,
+				A3ACE1761FA08E2300D043D0 /* Discover(发现) */,
+				A3ACE17A1FA08E2300D043D0 /* Hall(购彩大厅) */,
+				A3ACE17E1FA08E2300D043D0 /* History(开奖信息) */,
+				A3ACE1821FA08E2300D043D0 /* Main(主要) */,
+				A3ACE1861FA08E2300D043D0 /* MyLottery(我的彩票) */,
+				A3ACE18A1FA08E2300D043D0 /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A3ACE1721FA08E2300D043D0 /* Arena(竞技场) */ = {
+			isa = PBXGroup;
+			children = (
+				A3ACE1731FA08E2300D043D0 /* Controller */,
+				A3ACE1741FA08E2300D043D0 /* Model */,
+				A3ACE1751FA08E2300D043D0 /* View */,
+			);
+			path = "Arena(竞技场)";
+			sourceTree = "<group>";
+		};
+		A3ACE1731FA08E2300D043D0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A3ACE1741FA08E2300D043D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3ACE1751FA08E2300D043D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3ACE1761FA08E2300D043D0 /* Discover(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				A3ACE1771FA08E2300D043D0 /* Controller */,
+				A3ACE1781FA08E2300D043D0 /* Model */,
+				A3ACE1791FA08E2300D043D0 /* View */,
+			);
+			path = "Discover(发现)";
+			sourceTree = "<group>";
+		};
+		A3ACE1771FA08E2300D043D0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A3ACE1781FA08E2300D043D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3ACE1791FA08E2300D043D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3ACE17A1FA08E2300D043D0 /* Hall(购彩大厅) */ = {
+			isa = PBXGroup;
+			children = (
+				A3ACE17B1FA08E2300D043D0 /* Controller */,
+				A3ACE17C1FA08E2300D043D0 /* Model */,
+				A3ACE17D1FA08E2300D043D0 /* View */,
+			);
+			path = "Hall(购彩大厅)";
+			sourceTree = "<group>";
+		};
+		A3ACE17B1FA08E2300D043D0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A3ACE17C1FA08E2300D043D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3ACE17D1FA08E2300D043D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3ACE17E1FA08E2300D043D0 /* History(开奖信息) */ = {
+			isa = PBXGroup;
+			children = (
+				A3ACE17F1FA08E2300D043D0 /* Controller */,
+				A3ACE1801FA08E2300D043D0 /* Model */,
+				A3ACE1811FA08E2300D043D0 /* View */,
+			);
+			path = "History(开奖信息)";
+			sourceTree = "<group>";
+		};
+		A3ACE17F1FA08E2300D043D0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A3ACE1801FA08E2300D043D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3ACE1811FA08E2300D043D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3ACE1821FA08E2300D043D0 /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				A3ACE1831FA08E2300D043D0 /* Controller */,
+				A3ACE1841FA08E2300D043D0 /* Model */,
+				A3ACE1851FA08E2300D043D0 /* View */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		A3ACE1831FA08E2300D043D0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A3ACE1841FA08E2300D043D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3ACE1851FA08E2300D043D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3ACE1861FA08E2300D043D0 /* MyLottery(我的彩票) */ = {
+			isa = PBXGroup;
+			children = (
+				A3ACE1871FA08E2300D043D0 /* Controller */,
+				A3ACE1881FA08E2300D043D0 /* Model */,
+				A3ACE1891FA08E2300D043D0 /* View */,
+			);
+			path = "MyLottery(我的彩票)";
+			sourceTree = "<group>";
+		};
+		A3ACE1871FA08E2300D043D0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A3ACE1881FA08E2300D043D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3ACE1891FA08E2300D043D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3ACE18A1FA08E2300D043D0 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				A3ACE18B1FA08E2300D043D0 /* AppDelegate.h */,
+				A3ACE18C1FA08E2300D043D0 /* AppDelegate.m */,
+				A3ACE18D1FA08E2300D043D0 /* Category */,
+				A3ACE18E1FA08E2300D043D0 /* Lib */,
+				A3ACE18F1FA08E2300D043D0 /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		A3ACE18D1FA08E2300D043D0 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		A3ACE18E1FA08E2300D043D0 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A39D3FDF1FA08982003D5BB3 /* ZYLottery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A39D3FFA1FA08983003D5BB3 /* Build configuration list for PBXNativeTarget "ZYLottery" */;
+			buildPhases = (
+				A39D3FDC1FA08982003D5BB3 /* Sources */,
+				A39D3FDD1FA08982003D5BB3 /* Frameworks */,
+				A39D3FDE1FA08982003D5BB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZYLottery;
+			productName = ZYLottery;
+			productReference = A39D3FE01FA08983003D5BB3 /* ZYLottery.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A39D3FD81FA08982003D5BB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = sunny;
+				TargetAttributes = {
+					A39D3FDF1FA08982003D5BB3 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A39D3FDB1FA08982003D5BB3 /* Build configuration list for PBXProject "ZYLottery" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A39D3FD71FA08982003D5BB3;
+			productRefGroup = A39D3FE11FA08983003D5BB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A39D3FDF1FA08982003D5BB3 /* ZYLottery */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A39D3FDE1FA08982003D5BB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A39D3FF61FA08983003D5BB3 /* LaunchScreen.storyboard in Resources */,
+				A39D3FF31FA08983003D5BB3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A39D3FDC1FA08982003D5BB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A39D3FF11FA08983003D5BB3 /* ZYLottery.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A39D3FF41FA08983003D5BB3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A39D3FF51FA08983003D5BB3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A39D3FF81FA08983003D5BB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A39D3FF91FA08983003D5BB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A39D3FFB1FA08983003D5BB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = ZYLottery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunny.ZYLottery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A39D3FFC1FA08983003D5BB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = ZYLottery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunny.ZYLottery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A39D3FDB1FA08982003D5BB3 /* Build configuration list for PBXProject "ZYLottery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A39D3FF81FA08983003D5BB3 /* Debug */,
+				A39D3FF91FA08983003D5BB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A39D3FFA1FA08983003D5BB3 /* Build configuration list for PBXNativeTarget "ZYLottery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A39D3FFB1FA08983003D5BB3 /* Debug */,
+				A39D3FFC1FA08983003D5BB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A39D3FEF1FA08983003D5BB3 /* ZYLottery.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A39D3FF01FA08983003D5BB3 /* ZYLottery.xcdatamodel */,
+			);
+			currentVersion = A39D3FF01FA08983003D5BB3 /* ZYLottery.xcdatamodel */;
+			path = ZYLottery.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A39D3FD81FA08982003D5BB3 /* Project object */;
+}
