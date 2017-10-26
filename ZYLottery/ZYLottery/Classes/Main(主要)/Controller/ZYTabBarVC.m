@@ -99,42 +99,63 @@
     
     //1. 购彩大厅
     ZYHallTableViewController *hallVC = [[ZYHallTableViewController alloc] init];
-    hallVC.view.backgroundColor = [UIColor redColor];
-    [self setupOneChildViewController:hallVC image:[UIImage imageNamed:@"TabBar_Hall_new"] selectImage:[UIImage imageNamed:@"TabBar_Hall_selected_new"]];
+    hallVC.view.backgroundColor = [UIColor grayColor];
+    [self setupOneChildViewController:hallVC image:[UIImage imageNamed:@"TabBar_Hall_new"] selectImage:[UIImage imageNamed:@"TabBar_Hall_selected_new"] title:@"购彩大厅"];
     
     
     //2. 竞技场
     ZYArenaViewController *arenaVC = [[ZYArenaViewController alloc] init];
     arenaVC.view.backgroundColor = [UIColor greenColor];
     [self addChildViewController:arenaVC];
-    [self setupOneChildViewController:arenaVC image:[UIImage imageNamed:@"TabBar_Arena_new"] selectImage:[UIImage imageNamed:@"TabBar_Arena_selected_new"]];
+    [self setupOneChildViewController:arenaVC image:[UIImage imageNamed:@"TabBar_Arena_new"] selectImage:[UIImage imageNamed:@"TabBar_Arena_selected_new"] title:nil];
     
     //3. 发现
     ZYDiscoverTableTableViewController *discoveryVC = [[ZYDiscoverTableTableViewController alloc] init];
     discoveryVC.view.backgroundColor = [UIColor blueColor];
     [self addChildViewController:discoveryVC];
-    [self setupOneChildViewController:discoveryVC image:[UIImage imageNamed:@"TabBar_Discovery_new"] selectImage:[UIImage imageNamed:@"TabBar_Discovery_selected_new"]];
+    [self setupOneChildViewController:discoveryVC image:[UIImage imageNamed:@"TabBar_Discovery_new"] selectImage:[UIImage imageNamed:@"TabBar_Discovery_selected_new"] title:@"发现"];
     
     //4. 开奖信息
     ZYHistoryTableViewController *historyVC = [[ZYHistoryTableViewController alloc] init];
     historyVC.view.backgroundColor = [UIColor yellowColor];
     [self addChildViewController:historyVC];
-    [self setupOneChildViewController:historyVC image:[UIImage imageNamed:@"TabBar_History_new"] selectImage:[UIImage imageNamed:@"TabBar_History_selected_new"]];
+    [self setupOneChildViewController:historyVC image:[UIImage imageNamed:@"TabBar_History_new"] selectImage:[UIImage imageNamed:@"TabBar_History_selected_new"] title:@"开奖信息"];
     
     //5. 我的彩票
     ZYMyLotteryViewController *myLotteryVC = [[ZYMyLotteryViewController alloc] init];
     myLotteryVC.view.backgroundColor = [UIColor purpleColor];
     [self addChildViewController:myLotteryVC];
-    [self setupOneChildViewController:myLotteryVC image:[UIImage imageNamed:@"TabBar_MyLottery_new"] selectImage:[UIImage imageNamed:@"TabBar_MyLottery_selected_new"]];
+    [self setupOneChildViewController:myLotteryVC image:[UIImage imageNamed:@"TabBar_MyLottery_new"] selectImage:[UIImage imageNamed:@"TabBar_MyLottery_selected_new"] title:@"我的彩票"];
     
 }
 
 // 添加一个子控制器
-- (void)setupOneChildViewController:(UIViewController *)vc image:(UIImage *)image selectImage:(UIImage *)selectImage
+- (void)setupOneChildViewController:(UIViewController *)vc image:(UIImage *)image selectImage:(UIImage *)selectImage title:(NSString *)title
 {
-    [self addChildViewController:vc];
+    // 给tabBar每个子控制器都设置导航控制器
+    // 创建导航控制器
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+
+    // 设置导航条内容需要使用栈顶控制器的navigationItem模型
+    vc.navigationItem.title = title;
+    
+    // 设置导航条的背景图片
+    [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
+    // 设置导航栏文字属性
+    NSMutableDictionary *dictM = [NSMutableDictionary dictionary];
+    
+    dictM[NSFontAttributeName] = [UIFont boldSystemFontOfSize:21];
+    dictM[NSForegroundColorAttributeName] = [UIColor whiteColor];
+    
+    [nav.navigationBar setTitleTextAttributes:dictM];
+
+    
+    
+    [self addChildViewController:nav];
+    
     vc.tabBarItem.image = image;
     vc.tabBarItem.selectedImage = selectImage;
+    
     // 取消图片的渲染
 //    vc.tabBarItem.image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 //    vc.tabBarItem.selectedImage = [selectImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
