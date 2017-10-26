@@ -10,6 +10,7 @@
 		A39D3FF11FA08983003D5BB3 /* ZYLottery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A39D3FEF1FA08983003D5BB3 /* ZYLottery.xcdatamodeld */; };
 		A39D3FF31FA08983003D5BB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A39D3FF21FA08983003D5BB3 /* Assets.xcassets */; };
 		A39D3FF61FA08983003D5BB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39D3FF41FA08983003D5BB3 /* LaunchScreen.storyboard */; };
+		A3A8C8C21FA1912A0047C4A2 /* ZYTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A8C8C11FA1912A0047C4A2 /* ZYTabBarButton.m */; };
 		A3ACE1951FA0918000D043D0 /* ZYTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ACE1941FA0918000D043D0 /* ZYTabBarVC.m */; };
 		A3ACE1981FA094AC00D043D0 /* ZYHallTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ACE1971FA094AC00D043D0 /* ZYHallTableViewController.m */; };
 		A3ACE19B1FA094DE00D043D0 /* ZYArenaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ACE19A1FA094DE00D043D0 /* ZYArenaViewController.m */; };
@@ -19,6 +20,7 @@
 		A3ACE1A51FA098EB00D043D0 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = A3ACE18B1FA08E2300D043D0 /* AppDelegate.h */; };
 		A3ACE1A61FA098EB00D043D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ACE18C1FA08E2300D043D0 /* AppDelegate.m */; };
 		A3ACE1A71FA098EB00D043D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ACE18F1FA08E2300D043D0 /* main.m */; };
+		A3ACE1AA1FA1892E00D043D0 /* ZYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ACE1A91FA1892E00D043D0 /* ZYTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		A39D3FF21FA08983003D5BB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A39D3FF51FA08983003D5BB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A39D3FF71FA08983003D5BB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3A8C8C01FA1912A0047C4A2 /* ZYTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTabBarButton.h; sourceTree = "<group>"; };
+		A3A8C8C11FA1912A0047C4A2 /* ZYTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTabBarButton.m; sourceTree = "<group>"; };
 		A3ACE18B1FA08E2300D043D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A3ACE18C1FA08E2300D043D0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A3ACE18F1FA08E2300D043D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +46,8 @@
 		A3ACE1A01FA0954D00D043D0 /* ZYHistoryTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYHistoryTableViewController.m; sourceTree = "<group>"; };
 		A3ACE1A21FA0956400D043D0 /* ZYMyLotteryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYMyLotteryViewController.h; sourceTree = "<group>"; };
 		A3ACE1A31FA0956400D043D0 /* ZYMyLotteryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYMyLotteryViewController.m; sourceTree = "<group>"; };
+		A3ACE1A81FA1892E00D043D0 /* ZYTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYTabBar.h; sourceTree = "<group>"; };
+		A3ACE1A91FA1892E00D043D0 /* ZYTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +272,10 @@
 		A3ACE1851FA08E2300D043D0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A3ACE1A81FA1892E00D043D0 /* ZYTabBar.h */,
+				A3ACE1A91FA1892E00D043D0 /* ZYTabBar.m */,
+				A3A8C8C01FA1912A0047C4A2 /* ZYTabBarButton.h */,
+				A3A8C8C11FA1912A0047C4A2 /* ZYTabBarButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -406,8 +416,10 @@
 				A3ACE19E1FA0951E00D043D0 /* ZYDiscoverTableTableViewController.m in Sources */,
 				A3ACE1A41FA0956400D043D0 /* ZYMyLotteryViewController.m in Sources */,
 				A3ACE1A11FA0954D00D043D0 /* ZYHistoryTableViewController.m in Sources */,
+				A3A8C8C21FA1912A0047C4A2 /* ZYTabBarButton.m in Sources */,
 				A39D3FF11FA08983003D5BB3 /* ZYLottery.xcdatamodeld in Sources */,
 				A3ACE1981FA094AC00D043D0 /* ZYHallTableViewController.m in Sources */,
+				A3ACE1AA1FA1892E00D043D0 /* ZYTabBar.m in Sources */,
 				A3ACE1951FA0918000D043D0 /* ZYTabBarVC.m in Sources */,
 				A3ACE19B1FA094DE00D043D0 /* ZYArenaViewController.m in Sources */,
 			);
