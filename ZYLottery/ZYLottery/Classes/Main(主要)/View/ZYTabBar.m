@@ -47,6 +47,7 @@
     for (int i = 0; i < self.itemArray.count; ++i) {
         // 添加子控件
         UIButton *button = [[ZYTabBarButton alloc] init];
+        // 把5个btn添加到tabBar中
         [self addSubview:button];
         
         // 取出模型数组中的所有模型
@@ -57,6 +58,11 @@
         [button setBackgroundImage:tabBarItem.selectedImage forState:UIControlStateSelected];
         
         [button addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchDown];
+        
+        // 如果i = 0, 则显示购彩大厅
+        if (i == 0) {
+            [self btnClick:button];
+        }
         
     }
 }
@@ -76,6 +82,11 @@
     //3. 记录当前选中的按钮
     self.selectBtn = button;
     
+    //4. 调用代理方法
+    if ([self.delegate respondsToSelector:@selector(tabBar:index:)]) {
+        [self.delegate tabBar:self index:button.tag];
+    }
+    
 }
 
 // 布局子控件
@@ -91,6 +102,9 @@
     // 取出所有子控件
     int i = 0;
     for (UIButton *button in self.subviews) {
+        
+        // 记录每个Button
+        button.tag = i;
         
         buttonX = buttonW * i;
         

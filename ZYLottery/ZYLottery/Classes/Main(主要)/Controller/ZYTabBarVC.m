@@ -16,7 +16,7 @@
 
 #import "ZYTabBar.h"
 
-@interface ZYTabBarVC ()
+@interface ZYTabBarVC ()<ZYTabBarDelegate>
 
 /** tabBar的item 模型数组 */
 @property (nonatomic, strong) NSMutableArray *itemArray;
@@ -40,11 +40,13 @@
 {
     [super viewDidLoad];
     
+    // 初始化所有子控制器
     [self setupAllChildViewController];
 //    self.selectedIndex = 2;
     
     // 自定义tabBar
     [self setupTabBar];
+
     
 }
 
@@ -64,13 +66,28 @@
     ZYTabBar *tabBar = [[ZYTabBar alloc] init];
     // tabBar.count = self.childViewControllers.count;
     
+    /*
+     // 1.子控制器的个数
+     // 2.UIButton 内容
+     */
     tabBar.itemArray = self.itemArray;
     
+    // 此时系统的tabBar还未移除
     tabBar.frame = self.tabBar.frame;
     tabBar.backgroundColor = [UIColor blueColor];
     
     [self.view addSubview:tabBar];
 
+    // 设置代理
+    tabBar.delegate = self;
+    
+}
+
+#pragma -mark ZYTabBarDelegate
+- (void)tabBar:(ZYTabBar *)tabBar index:(NSInteger)index
+{
+//    NSLog(@"%ld",index);
+    self.selectedIndex = index;
 }
 
 // 添加所有的子控制器
