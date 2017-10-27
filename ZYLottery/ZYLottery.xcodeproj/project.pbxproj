@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A378BBC51FA3182000AE7FCD /* ZYPopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = A378BBC41FA3182000AE7FCD /* ZYPopMenu.m */; };
+		A378BBC71FA3182800AE7FCD /* ZYPopMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A378BBC61FA3182800AE7FCD /* ZYPopMenu.xib */; };
+		A389295B1FA354BB006C1BF0 /* UIView+ZYFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = A389295A1FA354BB006C1BF0 /* UIView+ZYFrame.m */; };
+		A389295F1FA35B27006C1BF0 /* ZYTest.c in Sources */ = {isa = PBXBuildFile; fileRef = A389295D1FA35B27006C1BF0 /* ZYTest.c */; };
 		A39D3FF11FA08983003D5BB3 /* ZYLottery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A39D3FEF1FA08983003D5BB3 /* ZYLottery.xcdatamodeld */; };
 		A39D3FF31FA08983003D5BB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A39D3FF21FA08983003D5BB3 /* Assets.xcassets */; };
 		A39D3FF61FA08983003D5BB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39D3FF41FA08983003D5BB3 /* LaunchScreen.storyboard */; };
+		A3A061A71FA1DB3700923CB5 /* ZYNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A061A61FA1DB3700923CB5 /* ZYNavigationViewController.m */; };
+		A3A061AA1FA1F86900923CB5 /* UIImage+ZYNotRender.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A061A91FA1F86900923CB5 /* UIImage+ZYNotRender.m */; };
+		A3A061AD1FA2021400923CB5 /* ZYCover.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A061AC1FA2021400923CB5 /* ZYCover.m */; };
 		A3A8C8C21FA1912A0047C4A2 /* ZYTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A8C8C11FA1912A0047C4A2 /* ZYTabBarButton.m */; };
 		A3ACE1951FA0918000D043D0 /* ZYTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ACE1941FA0918000D043D0 /* ZYTabBarVC.m */; };
 		A3ACE1981FA094AC00D043D0 /* ZYHallTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ACE1971FA094AC00D043D0 /* ZYHallTableViewController.m */; };
@@ -24,11 +31,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A378BBC31FA3182000AE7FCD /* ZYPopMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPopMenu.h; sourceTree = "<group>"; };
+		A378BBC41FA3182000AE7FCD /* ZYPopMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYPopMenu.m; sourceTree = "<group>"; };
+		A378BBC61FA3182800AE7FCD /* ZYPopMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYPopMenu.xib; sourceTree = "<group>"; };
+		A38929591FA354BB006C1BF0 /* UIView+ZYFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZYFrame.h"; sourceTree = "<group>"; };
+		A389295A1FA354BB006C1BF0 /* UIView+ZYFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZYFrame.m"; sourceTree = "<group>"; };
+		A389295C1FA359BE006C1BF0 /* ZYLottery.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZYLottery.pch; path = Lib/ZYLottery.pch; sourceTree = "<group>"; };
+		A389295D1FA35B27006C1BF0 /* ZYTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ZYTest.c; path = Lib/ZYTest.c; sourceTree = "<group>"; };
+		A389295E1FA35B27006C1BF0 /* ZYTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYTest.h; path = Lib/ZYTest.h; sourceTree = "<group>"; };
 		A39D3FE01FA08983003D5BB3 /* ZYLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39D3FF01FA08983003D5BB3 /* ZYLottery.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZYLottery.xcdatamodel; sourceTree = "<group>"; };
 		A39D3FF21FA08983003D5BB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A39D3FF51FA08983003D5BB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A39D3FF71FA08983003D5BB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3A061A51FA1DB3700923CB5 /* ZYNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNavigationViewController.h; sourceTree = "<group>"; };
+		A3A061A61FA1DB3700923CB5 /* ZYNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNavigationViewController.m; sourceTree = "<group>"; };
+		A3A061A81FA1F86900923CB5 /* UIImage+ZYNotRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZYNotRender.h"; sourceTree = "<group>"; };
+		A3A061A91FA1F86900923CB5 /* UIImage+ZYNotRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZYNotRender.m"; sourceTree = "<group>"; };
+		A3A061AB1FA2021400923CB5 /* ZYCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCover.h; sourceTree = "<group>"; };
+		A3A061AC1FA2021400923CB5 /* ZYCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCover.m; sourceTree = "<group>"; };
 		A3A8C8C01FA1912A0047C4A2 /* ZYTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTabBarButton.h; sourceTree = "<group>"; };
 		A3A8C8C11FA1912A0047C4A2 /* ZYTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTabBarButton.m; sourceTree = "<group>"; };
 		A3ACE18B1FA08E2300D043D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -206,6 +227,11 @@
 		A3ACE17D1FA08E2300D043D0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A3A061AB1FA2021400923CB5 /* ZYCover.h */,
+				A3A061AC1FA2021400923CB5 /* ZYCover.m */,
+				A378BBC31FA3182000AE7FCD /* ZYPopMenu.h */,
+				A378BBC41FA3182000AE7FCD /* ZYPopMenu.m */,
+				A378BBC61FA3182800AE7FCD /* ZYPopMenu.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -258,6 +284,8 @@
 			children = (
 				A3ACE1931FA0918000D043D0 /* ZYTabBarVC.h */,
 				A3ACE1941FA0918000D043D0 /* ZYTabBarVC.m */,
+				A3A061A51FA1DB3700923CB5 /* ZYNavigationViewController.h */,
+				A3A061A61FA1DB3700923CB5 /* ZYNavigationViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -321,6 +349,9 @@
 				A3ACE18D1FA08E2300D043D0 /* Category */,
 				A3ACE18E1FA08E2300D043D0 /* Lib */,
 				A3ACE18F1FA08E2300D043D0 /* main.m */,
+				A389295C1FA359BE006C1BF0 /* ZYLottery.pch */,
+				A389295D1FA35B27006C1BF0 /* ZYTest.c */,
+				A389295E1FA35B27006C1BF0 /* ZYTest.h */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -328,6 +359,10 @@
 		A3ACE18D1FA08E2300D043D0 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				A3A061A81FA1F86900923CB5 /* UIImage+ZYNotRender.h */,
+				A3A061A91FA1F86900923CB5 /* UIImage+ZYNotRender.m */,
+				A38929591FA354BB006C1BF0 /* UIView+ZYFrame.h */,
+				A389295A1FA354BB006C1BF0 /* UIView+ZYFrame.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -371,6 +406,7 @@
 				TargetAttributes = {
 					A39D3FDF1FA08982003D5BB3 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 995KGZDDWF;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -399,6 +435,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A39D3FF61FA08983003D5BB3 /* LaunchScreen.storyboard in Resources */,
+				A378BBC71FA3182800AE7FCD /* ZYPopMenu.xib in Resources */,
 				A39D3FF31FA08983003D5BB3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,17 +448,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3ACE1A51FA098EB00D043D0 /* AppDelegate.h in Sources */,
+				A3A061A71FA1DB3700923CB5 /* ZYNavigationViewController.m in Sources */,
+				A389295F1FA35B27006C1BF0 /* ZYTest.c in Sources */,
 				A3ACE1A61FA098EB00D043D0 /* AppDelegate.m in Sources */,
 				A3ACE1A71FA098EB00D043D0 /* main.m in Sources */,
 				A3ACE19E1FA0951E00D043D0 /* ZYDiscoverTableTableViewController.m in Sources */,
 				A3ACE1A41FA0956400D043D0 /* ZYMyLotteryViewController.m in Sources */,
+				A3A061AA1FA1F86900923CB5 /* UIImage+ZYNotRender.m in Sources */,
 				A3ACE1A11FA0954D00D043D0 /* ZYHistoryTableViewController.m in Sources */,
 				A3A8C8C21FA1912A0047C4A2 /* ZYTabBarButton.m in Sources */,
 				A39D3FF11FA08983003D5BB3 /* ZYLottery.xcdatamodeld in Sources */,
 				A3ACE1981FA094AC00D043D0 /* ZYHallTableViewController.m in Sources */,
 				A3ACE1AA1FA1892E00D043D0 /* ZYTabBar.m in Sources */,
+				A3A061AD1FA2021400923CB5 /* ZYCover.m in Sources */,
+				A378BBC51FA3182000AE7FCD /* ZYPopMenu.m in Sources */,
 				A3ACE1951FA0918000D043D0 /* ZYTabBarVC.m in Sources */,
 				A3ACE19B1FA094DE00D043D0 /* ZYArenaViewController.m in Sources */,
+				A389295B1FA354BB006C1BF0 /* UIView+ZYFrame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +589,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 995KGZDDWF;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZYLottery/Classes/Other/Lib/ZYLottery.pch;
 				INFOPLIST_FILE = ZYLottery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunny.ZYLottery;
@@ -558,6 +604,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 995KGZDDWF;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZYLottery/Classes/Other/Lib/ZYLottery.pch;
 				INFOPLIST_FILE = ZYLottery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunny.ZYLottery;

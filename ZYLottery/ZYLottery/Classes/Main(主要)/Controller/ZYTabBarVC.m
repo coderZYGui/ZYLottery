@@ -16,6 +16,8 @@
 
 #import "ZYTabBar.h"
 
+#import "ZYNavigationViewController.h"
+
 @interface ZYTabBarVC ()<ZYTabBarDelegate>
 
 /** tabBar的item 模型数组 */
@@ -134,23 +136,18 @@
 {
     // 给tabBar每个子控制器都设置导航控制器
     // 创建导航控制器
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    UINavigationController *nav = [[ZYNavigationViewController alloc] initWithRootViewController:vc];
 
     // 设置导航条内容需要使用栈顶控制器的navigationItem模型
     vc.navigationItem.title = title;
     
-    // 设置导航条的背景图片
-    [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
-    // 设置导航栏文字属性
-    NSMutableDictionary *dictM = [NSMutableDictionary dictionary];
-    
-    dictM[NSFontAttributeName] = [UIFont boldSystemFontOfSize:21];
-    dictM[NSForegroundColorAttributeName] = [UIColor whiteColor];
-    
-    [nav.navigationBar setTitleTextAttributes:dictM];
+    // 如果控制器是 Arena 类型
+    if ([vc isKindOfClass:[ZYArenaViewController class]]) {
+        // 竞技场
+        // 导航条为系统默认的样式
+        nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    }
 
-    
-    
     [self addChildViewController:nav];
     
     vc.tabBarItem.image = image;

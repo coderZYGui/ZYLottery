@@ -1,0 +1,23 @@
+//
+//  ZYLottery.pch
+//  ZYLottery
+//
+//  Created by 朝阳 on 2017/10/27.
+//  Copyright © 2017年 sunny. All rights reserved.
+//
+
+// poch 为什么不能用
+// 在Xcode5以后干掉了,如想用,需要手动配置
+
+#ifndef ZYLottery_pch
+#define ZYLottery_pch
+
+#ifdef __OBJC__ // 只有oc文件才导入
+
+#import "UIView+ZYFrame.h"
+#import "UIImage+ZYNotRender.h"
+
+#endif
+
+
+#endif /* ZYLottery_pch */

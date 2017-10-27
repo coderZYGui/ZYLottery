@@ -7,8 +7,12 @@
 //
 
 #import "ZYHallTableViewController.h"
+#import "UIImage+ZYNotRender.h"
+#import "ZYCover.h"
+#import "ZYPopMenu.h"
+//#import "UIView+ZYFrame.h"
 
-@interface ZYHallTableViewController ()
+@interface ZYHallTableViewController ()<ZYPopMenuDelegate>
 
 @end
 
@@ -17,82 +21,64 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    // 取消渲染 iOS7以后,导航条上的图片都会被默认渲染.
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
+//    UIImage *image = [[UIImage imageNamed:@"CS50_activity_image"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    // 创建左视图
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageWithRenderOriginalName:@"CS50_activity_image"] style:UIBarButtonItemStylePlain target:self action:@selector(leftBtnOnClick)];
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
-}
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+}
+
+// 点击leftBtn调用
+- (void)leftBtnOnClick
+{
+    // 由谁添加,由谁移除
     
-    return cell;
+    // 1.弹出蒙版.占据整个屏幕,不允许与用户交互
+    [ZYCover show];
+    
+    //2. 弹出popMenu
+    ZYPopMenu *popMenu = [ZYPopMenu showInCenter:self.view.center];
+    popMenu.delegate = self;
+    
+//    popMenu.width = 10;
+//    popMenu.height = 20;
+//    popMenu.x = 100;
+//    popMenu.y = 50;
+//    
+//    NSLog(@"%@",NSStringFromCGRect(popMenu.frame));
+    
+//    CGRect frame = popMenu.frame;
+//    frame.size.width = 50;
+//    popMenu.frame = frame;
+    
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+#pragma -mark ZYPopMenuDeleagte
+
+/**
+ 当点击x按钮调用
+ */
+- (void)popMenuDidCloseBtn:(ZYPopMenu *)popMenu
+{
+    // 移除popMenu并设置移除的位置
+    [popMenu hideInCenter:CGPointMake(44, 44) completion:^{
+        
+        // 移除蒙版
+        [ZYCover hide];
+    }];
+    
+    
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
+/**
+ 当动画执行执行完后调用
+ */
+//- (void)coverDidHide:(ZYCover *)cover
+//{
+//    [ZYCover hide];
+//}
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
