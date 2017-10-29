@@ -17,6 +17,7 @@
 #import "ZYTabBar.h"
 
 #import "ZYNavigationViewController.h"
+#import "ZYArenaNavViewController.h"
 
 @interface ZYTabBarVC ()<ZYTabBarDelegate>
 
@@ -101,31 +102,31 @@
     
     //1. 购彩大厅
     ZYHallTableViewController *hallVC = [[ZYHallTableViewController alloc] init];
-    hallVC.view.backgroundColor = [UIColor grayColor];
+    
     [self setupOneChildViewController:hallVC image:[UIImage imageNamed:@"TabBar_Hall_new"] selectImage:[UIImage imageNamed:@"TabBar_Hall_selected_new"] title:@"购彩大厅"];
     
     
     //2. 竞技场
     ZYArenaViewController *arenaVC = [[ZYArenaViewController alloc] init];
-    arenaVC.view.backgroundColor = [UIColor greenColor];
+    
     [self addChildViewController:arenaVC];
     [self setupOneChildViewController:arenaVC image:[UIImage imageNamed:@"TabBar_Arena_new"] selectImage:[UIImage imageNamed:@"TabBar_Arena_selected_new"] title:nil];
     
     //3. 发现
     ZYDiscoverTableTableViewController *discoveryVC = [[ZYDiscoverTableTableViewController alloc] init];
-    discoveryVC.view.backgroundColor = [UIColor blueColor];
+    
     [self addChildViewController:discoveryVC];
     [self setupOneChildViewController:discoveryVC image:[UIImage imageNamed:@"TabBar_Discovery_new"] selectImage:[UIImage imageNamed:@"TabBar_Discovery_selected_new"] title:@"发现"];
     
     //4. 开奖信息
     ZYHistoryTableViewController *historyVC = [[ZYHistoryTableViewController alloc] init];
-    historyVC.view.backgroundColor = [UIColor yellowColor];
+    
     [self addChildViewController:historyVC];
     [self setupOneChildViewController:historyVC image:[UIImage imageNamed:@"TabBar_History_new"] selectImage:[UIImage imageNamed:@"TabBar_History_selected_new"] title:@"开奖信息"];
     
     //5. 我的彩票
     ZYMyLotteryViewController *myLotteryVC = [[ZYMyLotteryViewController alloc] init];
-    myLotteryVC.view.backgroundColor = [UIColor purpleColor];
+    
     [self addChildViewController:myLotteryVC];
     [self setupOneChildViewController:myLotteryVC image:[UIImage imageNamed:@"TabBar_MyLottery_new"] selectImage:[UIImage imageNamed:@"TabBar_MyLottery_selected_new"] title:@"我的彩票"];
     
@@ -145,7 +146,7 @@
     if ([vc isKindOfClass:[ZYArenaViewController class]]) {
         // 竞技场
         // 导航条为系统默认的样式
-        nav = [[UINavigationController alloc] initWithRootViewController:vc];
+        nav = [[ZYArenaNavViewController alloc] initWithRootViewController:vc];
     }
 
     [self addChildViewController:nav];

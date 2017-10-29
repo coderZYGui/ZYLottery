@@ -16,6 +16,7 @@
 
 #import "UIView+ZYFrame.h"
 #import "UIImage+ZYNotRender.h"
+#import "UIImage+ZYStretchImage.h"
 
 #endif
 

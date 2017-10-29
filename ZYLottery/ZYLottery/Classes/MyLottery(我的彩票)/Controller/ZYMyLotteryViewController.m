@@ -10,28 +10,47 @@
 
 @interface ZYMyLotteryViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *redBtn;
+
 @end
 
 @implementation ZYMyLotteryViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    //1 获取redBtn当前的背景图片
+    UIImage *image = self.redBtn.currentBackgroundImage;
+    
+    //2 根据背景图片获得一张不拉伸的图片
+    image = [image stretchableImageWithLeftCapWidth:image.size.width * 0.5 topCapHeight:image.size.height * 0.5];
+    
+    //3 重新设置redBtn的背景图片
+    [self.redBtn setBackgroundImage:image forState: UIControlStateNormal];
+    
+    
+    // 设置导航栏左侧按钮
+    UIButton *btn = [[UIButton alloc] init];
+    [btn setImage:[UIImage imageNamed:@"FBMM_Barbutton"] forState:UIControlStateNormal];
+    
+    [btn setTitle:@"客服" forState:UIControlStateNormal];
+    
+    // 自适应btn尺寸
+    [btn sizeToFit];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
+    
+    // 设置右侧按钮
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageWithRenderOriginalName:@"Mylottery_config"] style:0 target:self action:@selector(config)];
+    
+    
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)config
+{
+    NSLog(@"%s, line = %d", __FUNCTION__, __LINE__);
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

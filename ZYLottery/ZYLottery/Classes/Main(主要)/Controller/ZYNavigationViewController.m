@@ -57,7 +57,7 @@
 - (void)viewDidLoad
 {
     // 会加载5次viewDidLoad方法. 因此把代码写在 initialize方法中
-
+//    NSLog(@"%s, line = %d", __FUNCTION__, __LINE__);
     
 }
 

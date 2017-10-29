@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A31EB6A31FA4EBD30024AD0B /* ZYArenaNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A31EB6A21FA4EBD30024AD0B /* ZYArenaNavViewController.m */; };
+		A31EB6A61FA4EF420024AD0B /* UIImage+ZYStretchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A31EB6A51FA4EF420024AD0B /* UIImage+ZYStretchImage.m */; };
+		A34877401FA45C6500EC46F7 /* ZYMyLotteryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A348773F1FA45C6500EC46F7 /* ZYMyLotteryViewController.xib */; };
 		A378BBC51FA3182000AE7FCD /* ZYPopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = A378BBC41FA3182000AE7FCD /* ZYPopMenu.m */; };
 		A378BBC71FA3182800AE7FCD /* ZYPopMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A378BBC61FA3182800AE7FCD /* ZYPopMenu.xib */; };
 		A389295B1FA354BB006C1BF0 /* UIView+ZYFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = A389295A1FA354BB006C1BF0 /* UIView+ZYFrame.m */; };
@@ -31,6 +34,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A31EB6A11FA4EBD30024AD0B /* ZYArenaNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYArenaNavViewController.h; sourceTree = "<group>"; };
+		A31EB6A21FA4EBD30024AD0B /* ZYArenaNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYArenaNavViewController.m; sourceTree = "<group>"; };
+		A31EB6A41FA4EF420024AD0B /* UIImage+ZYStretchImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZYStretchImage.h"; sourceTree = "<group>"; };
+		A31EB6A51FA4EF420024AD0B /* UIImage+ZYStretchImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZYStretchImage.m"; sourceTree = "<group>"; };
+		A348773F1FA45C6500EC46F7 /* ZYMyLotteryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYMyLotteryViewController.xib; sourceTree = "<group>"; };
 		A378BBC31FA3182000AE7FCD /* ZYPopMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPopMenu.h; sourceTree = "<group>"; };
 		A378BBC41FA3182000AE7FCD /* ZYPopMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYPopMenu.m; sourceTree = "<group>"; };
 		A378BBC61FA3182800AE7FCD /* ZYPopMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYPopMenu.xib; sourceTree = "<group>"; };
@@ -147,6 +155,8 @@
 			children = (
 				A3ACE1991FA094DE00D043D0 /* ZYArenaViewController.h */,
 				A3ACE19A1FA094DE00D043D0 /* ZYArenaViewController.m */,
+				A31EB6A11FA4EBD30024AD0B /* ZYArenaNavViewController.h */,
+				A31EB6A21FA4EBD30024AD0B /* ZYArenaNavViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -323,6 +333,7 @@
 			children = (
 				A3ACE1A21FA0956400D043D0 /* ZYMyLotteryViewController.h */,
 				A3ACE1A31FA0956400D043D0 /* ZYMyLotteryViewController.m */,
+				A348773F1FA45C6500EC46F7 /* ZYMyLotteryViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -363,6 +374,8 @@
 				A3A061A91FA1F86900923CB5 /* UIImage+ZYNotRender.m */,
 				A38929591FA354BB006C1BF0 /* UIView+ZYFrame.h */,
 				A389295A1FA354BB006C1BF0 /* UIView+ZYFrame.m */,
+				A31EB6A41FA4EF420024AD0B /* UIImage+ZYStretchImage.h */,
+				A31EB6A51FA4EF420024AD0B /* UIImage+ZYStretchImage.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -435,6 +448,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A39D3FF61FA08983003D5BB3 /* LaunchScreen.storyboard in Resources */,
+				A34877401FA45C6500EC46F7 /* ZYMyLotteryViewController.xib in Resources */,
 				A378BBC71FA3182800AE7FCD /* ZYPopMenu.xib in Resources */,
 				A39D3FF31FA08983003D5BB3 /* Assets.xcassets in Resources */,
 			);
@@ -457,8 +471,10 @@
 				A3A061AA1FA1F86900923CB5 /* UIImage+ZYNotRender.m in Sources */,
 				A3ACE1A11FA0954D00D043D0 /* ZYHistoryTableViewController.m in Sources */,
 				A3A8C8C21FA1912A0047C4A2 /* ZYTabBarButton.m in Sources */,
+				A31EB6A61FA4EF420024AD0B /* UIImage+ZYStretchImage.m in Sources */,
 				A39D3FF11FA08983003D5BB3 /* ZYLottery.xcdatamodeld in Sources */,
 				A3ACE1981FA094AC00D043D0 /* ZYHallTableViewController.m in Sources */,
+				A31EB6A31FA4EBD30024AD0B /* ZYArenaNavViewController.m in Sources */,
 				A3ACE1AA1FA1892E00D043D0 /* ZYTabBar.m in Sources */,
 				A3A061AD1FA2021400923CB5 /* ZYCover.m in Sources */,
 				A378BBC51FA3182000AE7FCD /* ZYPopMenu.m in Sources */,
