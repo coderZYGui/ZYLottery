@@ -49,13 +49,29 @@
     
     // 自定义tabBar
     [self setupTabBar];
+}
 
+// 移除tabBar中的子控件
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    // 移除系统的atbbar的子控件 是 UITabBarButton类型
+    // UITabBarButton 是私有属性
+    for (UIView *view in self.tabBar.subviews) {
+//        NSLog(@"%@",view);
+        // 判断此时的view是否是ZYTabBar,如果不是直接移除
+        if (![view isKindOfClass:[ZYTabBar class]]) {
+            [view removeFromSuperview];
+        }
+    }
     
 }
 
 // 自定义tabBar
 - (void)setupTabBar
 {
+    // 方法1:
 //    1. 系统的tabBar的缺陷,需要自定义
 //    1.移除整个tabBar简单粗暴(暂用第一种方法)
 //    1.移除系统的tabBar,添加自己的tabBar
@@ -63,11 +79,13 @@
 //    1.2 子控键用UIButton代替
 //    1.3 切换子控制器 selectedIndex
     
+    //方法2:
+        // 移除系统tabBar中的子控件
+    
     //1. 移除系统的TabBar
-    [self.tabBar removeFromSuperview];
+//    [self.tabBar removeFromSuperview];
     //2. 创建ZYTabBar
     ZYTabBar *tabBar = [[ZYTabBar alloc] init];
-    // tabBar.count = self.childViewControllers.count;
     
     /*
      // 1.子控制器的个数
@@ -76,10 +94,10 @@
     tabBar.itemArray = self.itemArray;
     
     // 此时系统的tabBar还未移除
-    tabBar.frame = self.tabBar.frame;
+    tabBar.frame = self.tabBar.bounds;
     tabBar.backgroundColor = [UIColor blueColor];
     
-    [self.view addSubview:tabBar];
+    [self.tabBar addSubview:tabBar];
 
     // 设置代理
     tabBar.delegate = self;
@@ -113,7 +131,13 @@
     [self setupOneChildViewController:arenaVC image:[UIImage imageNamed:@"TabBar_Arena_new"] selectImage:[UIImage imageNamed:@"TabBar_Arena_selected_new"] title:nil];
     
     //3. 发现
-    ZYDiscoverTableTableViewController *discoveryVC = [[ZYDiscoverTableTableViewController alloc] init];
+    
+    //3.1 加载storyboard
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ZYDiscoverTableTableViewController" bundle:nil];
+    //3.2 加载storyboard箭头指向的控制器
+    ZYDiscoverTableTableViewController *discoveryVC = [storyboard instantiateInitialViewController];
+    
+//    ZYDiscoverTableTableViewController *discoveryVC = [[ZYDiscoverTableTableViewController alloc] init];
     
     [self addChildViewController:discoveryVC];
     [self setupOneChildViewController:discoveryVC image:[UIImage imageNamed:@"TabBar_Discovery_new"] selectImage:[UIImage imageNamed:@"TabBar_Discovery_selected_new"] title:@"发现"];
