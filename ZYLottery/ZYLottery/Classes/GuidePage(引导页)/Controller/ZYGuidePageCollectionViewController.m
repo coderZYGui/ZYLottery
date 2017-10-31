@@ -167,12 +167,13 @@ static NSString * const reuseIdentifier = @"Cell";
     return 1;
 }
 
+#define ZYPage 4
 /**
  每一组有多少个item(类似于cell)
  */
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 4;
+    return ZYPage;
 }
 
 /**
@@ -201,6 +202,11 @@ static NSString * const reuseIdentifier = @"Cell";
     cell.image = image;
     
 //    NSLog(@"%@",cell);
+    
+    [cell setIndexPath:indexPath count:ZYPage];
+    
+
+    
     
     return cell;
 }

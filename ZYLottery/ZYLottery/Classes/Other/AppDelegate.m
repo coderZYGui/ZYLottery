@@ -63,12 +63,14 @@
         // 立即同步
         [[NSUserDefaults standardUserDefaults] synchronize];
         
+        
+        
     }else{
         // 进入主框架
         rootView = [[ZYTabBarVC alloc] init];
 
     }
-    
+//    NSLog(@"%@",NSHomeDirectory());
     
     // 创建窗口根控制器
 //    UITabBarController *tabBarVC = [[ZYTabBarVC alloc] init];

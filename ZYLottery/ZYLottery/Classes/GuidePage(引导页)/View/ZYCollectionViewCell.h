@@ -13,4 +13,6 @@
 /** 图片 */
 @property (nonatomic,strong) UIImage *image;
 
+- (void)setIndexPath:(NSIndexPath *)indexPath count:(NSInteger)count;
+
 @end
