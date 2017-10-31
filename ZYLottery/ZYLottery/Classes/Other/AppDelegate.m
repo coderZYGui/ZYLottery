@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ZYTabBarVC.h"
+#import "ZYGuidePageCollectionViewController.h"
 
 @interface AppDelegate ()
 
@@ -34,14 +35,47 @@
  
  */
 
+
+/**
+ 应用程序加载完毕的时候调用
+ */
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+
+#define ZYVersion @"version"
     // 创建窗口
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
+    UIViewController *rootView;
+    
+    // 当有版本更新,或者第一次安装的时候显示新特性界面.
+    //1. 获取当前的版本号
+    NSString *currVersion = [NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"];
+    //2. 获取上一次版本号
+    NSString *lastVersion = [[NSUserDefaults standardUserDefaults] objectForKey:ZYVersion];
+    
+    // 如果当前版本号 > 历史版本号,则进入新特性界面
+    if (![currVersion isEqualToString:lastVersion]) {
+        // 新特性界面
+        rootView = [[ZYGuidePageCollectionViewController alloc] init];
+
+        // 存储当前版本号
+        [[NSUserDefaults standardUserDefaults] setObject:currVersion forKey:ZYVersion];
+        // 立即同步
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        
+    }else{
+        // 进入主框架
+        rootView = [[ZYTabBarVC alloc] init];
+
+    }
+    
+    
     // 创建窗口根控制器
-    UITabBarController *tabBarVC = [[ZYTabBarVC alloc] init];
-    self.window.rootViewController = tabBarVC;
+//    UITabBarController *tabBarVC = [[ZYTabBarVC alloc] init];
+    
+//    UICollectionViewController *rootView = [[ZYGuidePageCollectionViewController alloc] init];
+    
+    self.window.rootViewController = rootView;
     
     // 显示窗口
     [self.window makeKeyAndVisible];

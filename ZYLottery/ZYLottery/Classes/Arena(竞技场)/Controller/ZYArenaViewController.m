@@ -24,6 +24,7 @@
     self.view = imageView;
     // 设置背景图片
     imageView.image = [UIImage imageNamed:@"NLArenaBackground"];
+    // 可以与用户交互
     imageView.userInteractionEnabled = YES;
 }
 

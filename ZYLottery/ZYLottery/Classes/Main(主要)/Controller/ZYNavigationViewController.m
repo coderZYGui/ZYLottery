@@ -7,8 +7,9 @@
 //
 
 #import "ZYNavigationViewController.h"
+#import <objc/runtime.h>
 
-@interface ZYNavigationViewController()<UINavigationControllerDelegate>
+@interface ZYNavigationViewController()<UINavigationControllerDelegate,UIGestureRecognizerDelegate>
 
 /** 系统手势代理 */
 @property (nonatomic, strong) id popGesture;
@@ -68,7 +69,6 @@
 {
     // 会加载5次viewDidLoad方法. 因此把代码写在 initialize方法中
 //    NSLog(@"%s, line = %d", __FUNCTION__, __LINE__);
-    [super viewDidLoad];
     
     // 清空手势代理,就可以实现滑动滚动,iOS6不支持
     // 根控制器不可以清空(会出现bug)
@@ -79,6 +79,73 @@
     
     // 如果是根控制器,还原手势代理,若不是根控制器,清除手势代理
 //    self.delegate = self;
+    
+
+    
+    // 全屏滑动移除控制器
+    /*
+     <UIScreenEdgePanGestureRecognizer: 0x7f947d70d600; state = Possible; delaysTouchesBegan = YES; view = <UILayoutContainerView 0x7f947d40cd10>; target= <(action=handleNavigationTransition:, target=<_UINavigationInteractiveTransition 0x7f947d70d4c0>)>>
+     */
+    //1. 先修改系统的手势,系统中没有提供全屏滑动移除控制器的属性
+//    NSLog(@"%@",self.interactivePopGestureRecognizer);
+    UIScreenEdgePanGestureRecognizer *gest = self.interactivePopGestureRecognizer;
+    
+    //2. 自己添加手势
+//    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleNavigationTransition:)];
+//    
+//    [self.view addGestureRecognizer:pan];
+    
+    // 缺target(target是系统的私有属性)
+    // 利用KVC 获取私有属性(gest valueForKeyPath:@"")
+    // 不知道target的真实类型
+    // 此时需要用到 OC的runtime机制: 只能动态获取当前某个类的成员属性,不能获取其子类和父类的属性
+    
+    
+    // __unsafe_unretained Class cls 要获取哪个类的成员属性
+    // unsigned int *outCount 获取Class 下面所有成员属性的个数
+    // 因为UIScreenEdgePanGestureRecognizer类的爷爷类才有target私有属性,因此获取UIGestureRecognizer类
+    
+//    unsigned int outCount = 0;
+//   Ivar *ivars = class_copyIvarList([UIGestureRecognizer class], &outCount);
+//    // 遍历Ivar数组中的所有属性
+//    for (int i = 0; i < outCount; ++i) {
+////        ivars[i];
+//        // 获取成员属性的名字
+//        NSString *name = @(ivar_getName(ivars[i]));
+//        NSLog(@"%@",name);
+//    }
+    
+    // 禁止系统手势
+//    self.interactivePopGestureRecognizer.enabled = NO;
+//    
+//    NSArray *targets = [gest valueForKey:@"_targets"];
+//    NSLog(@"%@",targets[0]);
+//    
+//    id target = [targets[0] valueForKey:@"_target"];
+    
+    id target = self.interactivePopGestureRecognizer.delegate;
+    
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:target action:@selector(handleNavigationTransition:)];
+    
+    // 设置手势代理
+    pan.delegate = self;
+    
+    [self.view addGestureRecognizer:pan];
+}
+
+#pragma -mark UIGestureRecognizerDelegate
+
+/**
+ 当开始滑动的时候调用
+ @return 是否在开始滑动的时候 禁止滑动
+ */
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+{
+//    NSLog(@"%ld",self.viewControllers.count);
+    
+    BOOL flag = (self.viewControllers.count != 1);
+    
+    return flag;
 }
 
 #pragma -mark UINavigationControllerDelegate

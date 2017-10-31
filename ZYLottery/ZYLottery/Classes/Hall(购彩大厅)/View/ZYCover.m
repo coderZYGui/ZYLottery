@@ -20,7 +20,7 @@
 //    cover.alpha = 0.7;
     cover.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.7];
     
-    // 把蒙版添加到window上
+    // 把蒙版添加到window上,并设置为主窗口
     [ZYKeyWindow addSubview:cover];
     
     // 因为父类设置alpha, 子类也会跟着透明
@@ -29,6 +29,7 @@
 
 + (void)hide
 {
+    // 遍历主窗口的子控件
     for (UIView *view in ZYKeyWindow.subviews) {
         if ([view isKindOfClass:[self class]]) {
             // 当前类

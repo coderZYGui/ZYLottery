@@ -13,6 +13,8 @@
 		A31EB6AB1FA5BE8B0024AD0B /* ZYBuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A31EB6AA1FA5BE8B0024AD0B /* ZYBuyViewController.m */; };
 		A31EB6AE1FA5C0390024AD0B /* ZYTitleViewButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A31EB6AD1FA5C0390024AD0B /* ZYTitleViewButton.m */; };
 		A34877401FA45C6500EC46F7 /* ZYMyLotteryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A348773F1FA45C6500EC46F7 /* ZYMyLotteryViewController.xib */; };
+		A34C7B2C1FA70CD200095854 /* ZYGuidePageCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A34C7B2B1FA70CD200095854 /* ZYGuidePageCollectionViewController.m */; };
+		A34C7B2F1FA71D2D00095854 /* ZYCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A34C7B2E1FA71D2D00095854 /* ZYCollectionViewCell.m */; };
 		A378BBC51FA3182000AE7FCD /* ZYPopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = A378BBC41FA3182000AE7FCD /* ZYPopMenu.m */; };
 		A378BBC71FA3182800AE7FCD /* ZYPopMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A378BBC61FA3182800AE7FCD /* ZYPopMenu.xib */; };
 		A389295B1FA354BB006C1BF0 /* UIView+ZYFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = A389295A1FA354BB006C1BF0 /* UIView+ZYFrame.m */; };
@@ -47,6 +49,10 @@
 		A31EB6AC1FA5C0390024AD0B /* ZYTitleViewButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTitleViewButton.h; sourceTree = "<group>"; };
 		A31EB6AD1FA5C0390024AD0B /* ZYTitleViewButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTitleViewButton.m; sourceTree = "<group>"; };
 		A348773F1FA45C6500EC46F7 /* ZYMyLotteryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYMyLotteryViewController.xib; sourceTree = "<group>"; };
+		A34C7B2A1FA70CD200095854 /* ZYGuidePageCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYGuidePageCollectionViewController.h; sourceTree = "<group>"; };
+		A34C7B2B1FA70CD200095854 /* ZYGuidePageCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYGuidePageCollectionViewController.m; sourceTree = "<group>"; };
+		A34C7B2D1FA71D2D00095854 /* ZYCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCollectionViewCell.h; sourceTree = "<group>"; };
+		A34C7B2E1FA71D2D00095854 /* ZYCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCollectionViewCell.m; sourceTree = "<group>"; };
 		A378BBC31FA3182000AE7FCD /* ZYPopMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPopMenu.h; sourceTree = "<group>"; };
 		A378BBC41FA3182000AE7FCD /* ZYPopMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYPopMenu.m; sourceTree = "<group>"; };
 		A378BBC61FA3182800AE7FCD /* ZYPopMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYPopMenu.xib; sourceTree = "<group>"; };
@@ -98,6 +104,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A34C7B261FA70C7000095854 /* GuidePage(引导页) */ = {
+			isa = PBXGroup;
+			children = (
+				A34C7B271FA70C7000095854 /* Controller */,
+				A34C7B281FA70C7000095854 /* Model */,
+				A34C7B291FA70C7000095854 /* View */,
+			);
+			path = "GuidePage(引导页)";
+			sourceTree = "<group>";
+		};
+		A34C7B271FA70C7000095854 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A34C7B2A1FA70CD200095854 /* ZYGuidePageCollectionViewController.h */,
+				A34C7B2B1FA70CD200095854 /* ZYGuidePageCollectionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A34C7B281FA70C7000095854 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A34C7B291FA70C7000095854 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A34C7B2D1FA71D2D00095854 /* ZYCollectionViewCell.h */,
+				A34C7B2E1FA71D2D00095854 /* ZYCollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A39D3FD71FA08982003D5BB3 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +178,7 @@
 		A3ACE1711FA08E2300D043D0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A34C7B261FA70C7000095854 /* GuidePage(引导页) */,
 				A3ACE1821FA08E2300D043D0 /* Main(主要) */,
 				A3ACE17A1FA08E2300D043D0 /* Hall(购彩大厅) */,
 				A3ACE1721FA08E2300D043D0 /* Arena(竞技场) */,
@@ -478,6 +520,7 @@
 				A3ACE1A51FA098EB00D043D0 /* AppDelegate.h in Sources */,
 				A3A061A71FA1DB3700923CB5 /* ZYNavigationViewController.m in Sources */,
 				A389295F1FA35B27006C1BF0 /* ZYTest.c in Sources */,
+				A34C7B2F1FA71D2D00095854 /* ZYCollectionViewCell.m in Sources */,
 				A3ACE1A61FA098EB00D043D0 /* AppDelegate.m in Sources */,
 				A3ACE1A71FA098EB00D043D0 /* main.m in Sources */,
 				A31EB6AB1FA5BE8B0024AD0B /* ZYBuyViewController.m in Sources */,
@@ -493,6 +536,7 @@
 				A31EB6A31FA4EBD30024AD0B /* ZYArenaNavViewController.m in Sources */,
 				A3ACE1AA1FA1892E00D043D0 /* ZYTabBar.m in Sources */,
 				A3A061AD1FA2021400923CB5 /* ZYCover.m in Sources */,
+				A34C7B2C1FA70CD200095854 /* ZYGuidePageCollectionViewController.m in Sources */,
 				A378BBC51FA3182000AE7FCD /* ZYPopMenu.m in Sources */,
 				A3ACE1951FA0918000D043D0 /* ZYTabBarVC.m in Sources */,
 				A3ACE19B1FA094DE00D043D0 /* ZYArenaViewController.m in Sources */,

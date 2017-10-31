@@ -45,7 +45,7 @@
     
     // 初始化所有子控制器
     [self setupAllChildViewController];
-//    self.selectedIndex = 2;
+
     
     // 自定义tabBar
     [self setupTabBar];
@@ -137,7 +137,7 @@
     //3.2 加载storyboard箭头指向的控制器
     ZYDiscoverTableTableViewController *discoveryVC = [storyboard instantiateInitialViewController];
     
-//    ZYDiscoverTableTableViewController *discoveryVC = [[ZYDiscoverTableTableViewController alloc] init];
+
     
     [self addChildViewController:discoveryVC];
     [self setupOneChildViewController:discoveryVC image:[UIImage imageNamed:@"TabBar_Discovery_new"] selectImage:[UIImage imageNamed:@"TabBar_Discovery_selected_new"] title:@"发现"];

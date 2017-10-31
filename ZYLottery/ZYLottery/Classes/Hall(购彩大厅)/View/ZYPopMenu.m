@@ -32,9 +32,10 @@
  */
 + (instancetype)showInCenter:(CGPoint)center
 {
-    UIView *popMenu = [[[NSBundle mainBundle] loadNibNamed:@"ZYPopMenu" owner:nil options:nil] lastObject];
+    ZYPopMenu *popMenu = [[[NSBundle mainBundle] loadNibNamed:@"ZYPopMenu" owner:nil options:nil] lastObject];
     popMenu.center = center;
     
+    // 把popMenu也添加到主窗口中
     [ZYKeyWindow addSubview:popMenu];
     
     return popMenu;

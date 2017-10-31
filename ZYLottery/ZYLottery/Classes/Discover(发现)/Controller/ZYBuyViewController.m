@@ -43,11 +43,11 @@
 
 // 封装标题按钮
 
-//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-//{
-////    [self.button setTitle:@"朝阳彩种朝阳彩种" forState:UIControlStateNormal];
-//    [self.button setImage:nil forState:UIControlStateNormal];
-//    
-//}
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+//    [self.button setTitle:@"朝阳彩种朝阳彩种" forState:UIControlStateNormal];
+    [self.button setImage:nil forState:UIControlStateNormal];
+    
+}
 
 @end
