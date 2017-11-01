@@ -36,6 +36,8 @@
 		A3ACE1A61FA098EB00D043D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ACE18C1FA08E2300D043D0 /* AppDelegate.m */; };
 		A3ACE1A71FA098EB00D043D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ACE18F1FA08E2300D043D0 /* main.m */; };
 		A3ACE1AA1FA1892E00D043D0 /* ZYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A3ACE1A91FA1892E00D043D0 /* ZYTabBar.m */; };
+		A3E8F3781FA96A0E00C1AC2F /* ZYSaveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E8F3771FA96A0E00C1AC2F /* ZYSaveTool.m */; };
+		A3E8F37B1FA96B8700C1AC2F /* ZYRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E8F37A1FA96B8700C1AC2F /* ZYRootVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +93,10 @@
 		A3ACE1A31FA0956400D043D0 /* ZYMyLotteryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYMyLotteryViewController.m; sourceTree = "<group>"; };
 		A3ACE1A81FA1892E00D043D0 /* ZYTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYTabBar.h; sourceTree = "<group>"; };
 		A3ACE1A91FA1892E00D043D0 /* ZYTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYTabBar.m; sourceTree = "<group>"; };
+		A3E8F3761FA96A0E00C1AC2F /* ZYSaveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYSaveTool.h; sourceTree = "<group>"; };
+		A3E8F3771FA96A0E00C1AC2F /* ZYSaveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYSaveTool.m; sourceTree = "<group>"; };
+		A3E8F3791FA96B8700C1AC2F /* ZYRootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYRootVC.h; sourceTree = "<group>"; };
+		A3E8F37A1FA96B8700C1AC2F /* ZYRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYRootVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +184,7 @@
 		A3ACE1711FA08E2300D043D0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A3E8F3731FA969C100C1AC2F /* Tool(业务逻辑) */,
 				A34C7B261FA70C7000095854 /* GuidePage(引导页) */,
 				A3ACE1821FA08E2300D043D0 /* Main(主要) */,
 				A3ACE17A1FA08E2300D043D0 /* Hall(购彩大厅) */,
@@ -442,6 +449,33 @@
 			path = Lib;
 			sourceTree = "<group>";
 		};
+		A3E8F3731FA969C100C1AC2F /* Tool(业务逻辑) */ = {
+			isa = PBXGroup;
+			children = (
+				A3E8F3741FA969C100C1AC2F /* RootVC */,
+				A3E8F3751FA969C100C1AC2F /* SaveTool */,
+			);
+			path = "Tool(业务逻辑)";
+			sourceTree = "<group>";
+		};
+		A3E8F3741FA969C100C1AC2F /* RootVC */ = {
+			isa = PBXGroup;
+			children = (
+				A3E8F3791FA96B8700C1AC2F /* ZYRootVC.h */,
+				A3E8F37A1FA96B8700C1AC2F /* ZYRootVC.m */,
+			);
+			path = RootVC;
+			sourceTree = "<group>";
+		};
+		A3E8F3751FA969C100C1AC2F /* SaveTool */ = {
+			isa = PBXGroup;
+			children = (
+				A3E8F3761FA96A0E00C1AC2F /* ZYSaveTool.h */,
+				A3E8F3771FA96A0E00C1AC2F /* ZYSaveTool.m */,
+			);
+			path = SaveTool;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -524,6 +558,7 @@
 				A3ACE1A61FA098EB00D043D0 /* AppDelegate.m in Sources */,
 				A3ACE1A71FA098EB00D043D0 /* main.m in Sources */,
 				A31EB6AB1FA5BE8B0024AD0B /* ZYBuyViewController.m in Sources */,
+				A3E8F3781FA96A0E00C1AC2F /* ZYSaveTool.m in Sources */,
 				A3ACE19E1FA0951E00D043D0 /* ZYDiscoverTableTableViewController.m in Sources */,
 				A3ACE1A41FA0956400D043D0 /* ZYMyLotteryViewController.m in Sources */,
 				A3A061AA1FA1F86900923CB5 /* UIImage+ZYNotRender.m in Sources */,
@@ -539,6 +574,7 @@
 				A34C7B2C1FA70CD200095854 /* ZYGuidePageCollectionViewController.m in Sources */,
 				A378BBC51FA3182000AE7FCD /* ZYPopMenu.m in Sources */,
 				A3ACE1951FA0918000D043D0 /* ZYTabBarVC.m in Sources */,
+				A3E8F37B1FA96B8700C1AC2F /* ZYRootVC.m in Sources */,
 				A3ACE19B1FA094DE00D043D0 /* ZYArenaViewController.m in Sources */,
 				A389295B1FA354BB006C1BF0 /* UIView+ZYFrame.m in Sources */,
 			);

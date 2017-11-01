@@ -205,9 +205,6 @@ static NSString * const reuseIdentifier = @"Cell";
     
     [cell setIndexPath:indexPath count:ZYPage];
     
-
-    
-    
     return cell;
 }
 

@@ -17,8 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // 隐藏底部TarBar
-    self.hidesBottomBarWhenPushed = YES;
+
 }
 
 /**

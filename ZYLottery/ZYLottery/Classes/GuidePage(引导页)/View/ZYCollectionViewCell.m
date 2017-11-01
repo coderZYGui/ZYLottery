@@ -7,6 +7,7 @@
 //
 
 #import "ZYCollectionViewCell.h"
+#import "ZYTabBarVC.h"
 
 @interface ZYCollectionViewCell()
 
@@ -29,10 +30,27 @@
         btn.center = CGPointMake(self.width / 2, self.height * 0.9);
         [self.contentView addSubview:btn];
         
+        [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+        
         _startBtn = btn;
         
     }
     return _startBtn;
+}
+
+- (void)btnClick:(UIButton *)button
+{
+//    NSLog(@"%s, line = %d", __FUNCTION__, __LINE__);
+    
+    // 切换主界面
+    // 切换界面的方式: 1.push  2.TarBarVC  3.modal
+    // 方式1和2: 必须要有导航控制器或标签控制器
+    // 方式3: 使用modal,modal内部有一个强指针(window)引用着, 引导页不会在内存中不会被销毁.
+    
+    // 引导页只有在安装app后,或者版本更新的时候 才出现.
+    // 切换window的根控制器
+    ZYTabBarVC *tabBarVC = [[ZYTabBarVC alloc] init];
+    ZYKeyWindow.rootViewController = tabBarVC;
 }
 
 // 懒加载

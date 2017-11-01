@@ -207,7 +207,7 @@
         <!--Buy View Controller-->
         <scene sceneID="bLD-vQ-no7">
             <objects>
-                <viewController id="QAA-0f-cmi" customClass="ZYBuyViewController" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="QAA-0f-cmi" customClass="ZYBuyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UNE-e9-AcW"/>
                         <viewControllerLayoutGuide type="bottom" id="BuS-1F-tbz"/>
@@ -221,7 +221,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fr-l1-fXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="846" y="58"/>
+            <point key="canvasLocation" x="978" y="60"/>
         </scene>
     </scenes>
     <resources>

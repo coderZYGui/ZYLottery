@@ -17,6 +17,7 @@
 #import "UIView+ZYFrame.h"
 #import "UIImage+ZYNotRender.h"
 #import "UIImage+ZYStretchImage.h"
+#define ZYKeyWindow [UIApplication sharedApplication].keyWindow
 
 #endif
 
