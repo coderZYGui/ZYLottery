@@ -44,7 +44,7 @@
         
     }
     
-    NSLog(@"%@",NSHomeDirectory());
+//    NSLog(@"%@",NSHomeDirectory());
     
     return rootView;
 }

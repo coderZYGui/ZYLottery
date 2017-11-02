@@ -182,22 +182,17 @@
 
  @param viewController 入栈的控制器
  */
-//- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
-//{
-//    // 还原系统做法
-//    [super pushViewController:viewController animated:animated];
-//    // 如果不是根控制器,其他的控制器(viewControllers=1的时候,说明只有根控制器)
-//    if (self.viewControllers.count != 1) {
-//        
-//        // 如果设置左侧统一返回按钮,就没有滑动移除控制器的功能
-//        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageWithRenderOriginalName:@"NavBack"] style:0 target:self action:@selector(back)];
-//        
-//    }
-//}
-
-- (void)back
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    [self popViewControllerAnimated: YES];
+    // 如果不是根控制器,其他的控制器(viewControllers=1的时候,说明只有根控制器)
+    if (self.viewControllers.count != 0) {
+        
+        viewController.hidesBottomBarWhenPushed = YES;
+        
+    }
+    // 还原系统做法
+    [super pushViewController:viewController animated:animated];
 }
+
 
 @end

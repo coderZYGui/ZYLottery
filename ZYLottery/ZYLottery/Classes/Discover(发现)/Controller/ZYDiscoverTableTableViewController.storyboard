@@ -207,7 +207,7 @@
         <!--Buy View Controller-->
         <scene sceneID="bLD-vQ-no7">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="QAA-0f-cmi" customClass="ZYBuyViewController" sceneMemberID="viewController">
+                <viewController id="QAA-0f-cmi" customClass="ZYBuyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UNE-e9-AcW"/>
                         <viewControllerLayoutGuide type="bottom" id="BuS-1F-tbz"/>

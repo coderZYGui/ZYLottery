@@ -7,6 +7,7 @@
 //
 
 #import "ZYMyLotteryViewController.h"
+#import "ZYSettingTableViewController.h"
 
 @interface ZYMyLotteryViewController ()
 
@@ -49,7 +50,12 @@
 
 - (void)config
 {
-    NSLog(@"%s, line = %d", __FUNCTION__, __LINE__);
+//    NSLog(@"%s, line = %d", __FUNCTION__, __LINE__);
+    
+    ZYSettingTableViewController *setting = [[ZYSettingTableViewController alloc] init];
+    
+    [self.navigationController pushViewController:setting animated:YES];
+    
 }
 
 
