@@ -10,9 +10,9 @@
 
 @interface ZYSaveTool : NSObject
 
-+ (nullable id)objectForKey:(NSString *)anAttribute;
++ (nullable id)objectForKey:(NSString *_Nullable)anAttribute;
 
-+ (void)setObject:(nullable id)value forKey:(NSString *)defaultName;
++ (void)setObject:(nullable id)value forKey:(NSString *_Nullable)defaultName;
 
 
 @end

@@ -55,7 +55,7 @@
     item.OperationBlock = ^(NSIndexPath *indexPath){
         
         UIViewController *vc= [[UIViewController alloc] init];
-        vc.navigationItem.title = @"朝阳";
+        vc.navigationItem.title = @"ZY";
         vc.view.backgroundColor = [UIColor greenColor];
         
         [weakSelf.navigationController pushViewController:vc animated:YES];
@@ -111,9 +111,6 @@
     };
     
     ZYSettingItem *item22 = [ZYSettingArrowItem itemWithIcon:[UIImage imageNamed:@"MoreShare"] title:@"分享"];
-    item22.OperationBlock = ^(NSIndexPath *indexPath){
-        
-    };
     
     ZYSettingItem *item23 = [ZYSettingArrowItem itemWithIcon:[UIImage imageNamed:@"MoreNetease"] title:@"产品推荐"];
     

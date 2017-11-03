@@ -44,8 +44,6 @@
     // 设置右侧按钮
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageWithRenderOriginalName:@"Mylottery_config"] style:0 target:self action:@selector(config)];
     
-    
-    
 }
 
 - (void)config

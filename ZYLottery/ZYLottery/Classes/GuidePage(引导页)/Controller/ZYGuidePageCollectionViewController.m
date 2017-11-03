@@ -94,16 +94,16 @@ static NSString * const reuseIdentifier = @"Cell";
     
     //3. 大标题
     UIImageView *guideLargeText = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"guideLargeText1"]];
-    [self.collectionView addSubview:guideLargeText];
     // 为了适应任何机型,height弄一个比例
     guideLargeText.center = CGPointMake(self.view.width / 2, self.view.height * 0.7f );
     self.guideLargeTextImageView = guideLargeText;
+    [self.collectionView addSubview:guideLargeText];
     
     //4. 小标题
     UIImageView *guideSmallText = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"guideSmallText1"]];
-    [self.collectionView addSubview:guideSmallText];
     guideSmallText.center = CGPointMake(self.view.width / 2, self.view.height * 0.8f );
     self.guideSmallTextImageView = guideSmallText;
+    [self.collectionView addSubview:guideSmallText];
 }
 
 /**
@@ -120,13 +120,11 @@ static NSString * const reuseIdentifier = @"Cell";
     // 计算一个偏移量
     CGFloat oneOffset = offsetX - self.lastOffestX;
 //    NSLog(@"oneOffset = %lf",oneOffset);
-    
 
-    
     // 切换图片
     // 计算页码
-    NSInteger page = offsetX / oneOffset;
-    NSString *imageName = [NSString stringWithFormat:@"guide%ld",page + 1];
+    NSInteger page = offsetX / self.view.width + 1;
+    NSString *imageName = [NSString stringWithFormat:@"guide%ld",page];
     self.ball.image = [UIImage imageNamed:imageName];
     
     // 大标题
@@ -153,8 +151,6 @@ static NSString * const reuseIdentifier = @"Cell";
     
     // 记录上一次偏移量
     self.lastOffestX = offsetX;
-    //    NSLog(@"lastOffestX = %lf",self.lastOffestX);
-    
 }
 
 #pragma -mark UICollectionView 数据源方法

@@ -31,12 +31,6 @@
 
 + (instancetype)itemWithTitle:(NSString *)title;
 
-/** 右侧视图 */
-//@property (nonatomic, assign) NSUInteger type;
-
-/** 是否开关 */
-//@property (nonatomic, assign, getter=isOn) BOOL on;
-
 /** 点击cell要做的事情 */
 @property (nonatomic, copy) void(^OperationBlock)(NSIndexPath *indexPath);
 
