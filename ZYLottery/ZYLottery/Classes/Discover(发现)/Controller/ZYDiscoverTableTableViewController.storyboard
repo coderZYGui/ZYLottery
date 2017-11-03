@@ -20,46 +20,46 @@
                         <sections>
                             <tableViewSection headerTitle="" id="xWI-vv-enu">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="86" id="tkH-4H-0jV">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="86" id="tkH-4H-0jV">
                                         <rect key="frame" x="0.0" y="35" width="375" height="86"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tkH-4H-0jV" id="Yhu-k1-3lG">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="86"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discovery_groupBuy_title" translatesAutoresizingMaskIntoConstraints="NO" id="NaH-3G-RJz">
-                                                    <rect key="frame" x="12" y="6" width="73" height="34"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discovery_luckyBet_title" translatesAutoresizingMaskIntoConstraints="NO" id="NaH-3G-RJz">
+                                                    <rect key="frame" x="12" y="6" width="126" height="34"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="34" id="2C5-fE-a6D"/>
-                                                        <constraint firstAttribute="width" constant="73" id="uEG-w8-Tno"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discovery_groupBuy_icon" translatesAutoresizingMaskIntoConstraints="NO" id="PcV-nt-S5U">
-                                                    <rect key="frame" x="230" y="0.0" width="112" height="85.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="112" id="a8x-8f-7ib"/>
+                                                        <constraint firstAttribute="height" constant="34" id="7gl-Gv-vSF"/>
+                                                        <constraint firstAttribute="width" constant="126" id="ppz-LJ-GYa"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="跟着高手买,一起入坑" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ec9-rq-56G">
-                                                    <rect key="frame" x="10" y="48" width="151.5" height="22.5"/>
+                                                    <rect key="frame" x="10" y="51" width="151.5" height="19.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discovery_luckyBet_icon" translatesAutoresizingMaskIntoConstraints="NO" id="PcV-nt-S5U">
+                                                    <rect key="frame" x="274" y="0.0" width="101" height="85.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="85.5" id="YjA-Kb-1eI"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="PcV-nt-S5U" firstAttribute="top" secondItem="Yhu-k1-3lG" secondAttribute="top" id="9lM-hg-wRm"/>
-                                                <constraint firstItem="Ec9-rq-56G" firstAttribute="top" secondItem="NaH-3G-RJz" secondAttribute="bottom" constant="8" id="B3h-Up-sML"/>
-                                                <constraint firstAttribute="trailing" secondItem="PcV-nt-S5U" secondAttribute="trailing" id="Nnc-Ve-yu9"/>
+                                                <constraint firstItem="PcV-nt-S5U" firstAttribute="top" secondItem="Yhu-k1-3lG" secondAttribute="top" id="EdQ-df-zzd"/>
+                                                <constraint firstItem="NaH-3G-RJz" firstAttribute="leading" secondItem="Yhu-k1-3lG" secondAttribute="leading" constant="12" id="M0i-zX-7hT"/>
                                                 <constraint firstAttribute="bottom" secondItem="Ec9-rq-56G" secondAttribute="bottom" constant="15" id="ScR-Vj-wNx"/>
-                                                <constraint firstAttribute="bottom" secondItem="PcV-nt-S5U" secondAttribute="bottom" id="drN-Ji-wyz"/>
-                                                <constraint firstItem="NaH-3G-RJz" firstAttribute="leading" secondItem="Yhu-k1-3lG" secondAttribute="leading" constant="12" id="m9N-8N-7pA"/>
+                                                <constraint firstAttribute="bottom" secondItem="PcV-nt-S5U" secondAttribute="bottom" id="W20-li-76y"/>
+                                                <constraint firstItem="NaH-3G-RJz" firstAttribute="top" secondItem="Yhu-k1-3lG" secondAttribute="top" constant="6" id="bat-vt-4Pv"/>
+                                                <constraint firstAttribute="trailing" secondItem="PcV-nt-S5U" secondAttribute="trailing" id="cgx-HM-AsI"/>
                                                 <constraint firstItem="Ec9-rq-56G" firstAttribute="leading" secondItem="Yhu-k1-3lG" secondAttribute="leading" constant="10" id="skc-Hd-yO9"/>
-                                                <constraint firstItem="NaH-3G-RJz" firstAttribute="top" secondItem="Yhu-k1-3lG" secondAttribute="top" constant="6" id="zZi-VC-QoG"/>
+                                                <constraint firstItem="Ec9-rq-56G" firstAttribute="top" secondItem="NaH-3G-RJz" secondAttribute="bottom" constant="11" id="tYD-A0-I1C"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="QAA-0f-cmi" kind="push" id="ih2-lb-i8U"/>
+                                            <segue destination="tUJ-0g-XBY" kind="push" id="qzX-Yg-DZy"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -104,6 +104,9 @@
                                                 <constraint firstItem="IgW-Sy-Ppj" firstAttribute="leading" secondItem="H66-P2-8fW" secondAttribute="leading" constant="12" id="tDx-x8-ppi"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="QAA-0f-cmi" kind="push" id="8LW-N5-shq"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -202,7 +205,58 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uPf-rA-xgR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129" y="191"/>
+            <point key="canvasLocation" x="-23.199999999999999" y="-26.53673163418291"/>
+        </scene>
+        <!--Lucky View Controller-->
+        <scene sceneID="zWM-be-Sj2">
+            <objects>
+                <viewController id="tUJ-0g-XBY" customClass="ZYLuckyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Aug-Eg-CaZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="GCL-2i-vRh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ia2-eo-oWU" customClass="ZYLuckyView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVi-hT-gcS">
+                                <rect key="frame" x="180" y="143" width="191" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="luck_entry_number_button_normal"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAu-RE-DU9">
+                                <rect key="frame" x="16" y="365" width="153" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="luck_entry_lots_button_normal"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7e-TZ-n9X">
+                                <rect key="frame" x="178" y="365" width="181" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="luck_entry_birthday_button_normal"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lucky_entry_light0" translatesAutoresizingMaskIntoConstraints="NO" id="Xtd-zF-6fP">
+                                <rect key="frame" x="72" y="70" width="231" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7E-kf-ryO">
+                                <rect key="frame" x="0.0" y="138" width="191" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="luck_entry_roulette_button_normal"/>
+                                <connections>
+                                    <action selector="rotaryButton:" destination="tUJ-0g-XBY" eventType="touchUpInside" id="Tdn-Rh-l9W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2c3-3N-EZL"/>
+                    <connections>
+                        <outlet property="lightImage" destination="Xtd-zF-6fP" id="DvP-W3-rto"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q6z-xl-sjT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="776.79999999999995" y="-185.75712143928038"/>
         </scene>
         <!--Buy View Controller-->
         <scene sceneID="bLD-vQ-no7">
@@ -221,11 +275,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fr-l1-fXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="978" y="60"/>
+            <point key="canvasLocation" x="911" y="557"/>
         </scene>
     </scenes>
     <resources>
         <image name="discovery_groupBuy_icon" width="113" height="67"/>
         <image name="discovery_groupBuy_title" width="54" height="23"/>
+        <image name="discovery_luckyBet_icon" width="101" height="79"/>
+        <image name="discovery_luckyBet_title" width="96" height="23"/>
+        <image name="luck_entry_birthday_button_normal" width="137" height="140"/>
+        <image name="luck_entry_lots_button_normal" width="153" height="152"/>
+        <image name="luck_entry_number_button_normal" width="130" height="139"/>
+        <image name="luck_entry_roulette_button_normal" width="140" height="144"/>
+        <image name="lucky_entry_light0" width="231" height="29"/>
     </resources>
 </document>

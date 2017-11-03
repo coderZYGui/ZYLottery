@@ -46,6 +46,8 @@
 		A3B71BB01FAB6E1300E4B7AF /* ZYScoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B71BAF1FAB6E1300E4B7AF /* ZYScoreTableViewController.m */; };
 		A3B71BB31FAB6E7800E4B7AF /* ZYBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B71BB21FAB6E7800E4B7AF /* ZYBaseTableViewController.m */; };
 		A3B71BB61FAB7A9F00E4B7AF /* ZYAwardTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B71BB51FAB7A9F00E4B7AF /* ZYAwardTableViewController.m */; };
+		A3BEADB01FAC61A900BE7956 /* ZYLuckyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BEADAF1FAC61A900BE7956 /* ZYLuckyViewController.m */; };
+		A3BEADB61FAC676600BE7956 /* ZYLuckyView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BEADB51FAC676600BE7956 /* ZYLuckyView.m */; };
 		A3BEFD3F1FAAECAE00AA5621 /* ZYSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BEFD3E1FAAECAE00AA5621 /* ZYSettingTableViewCell.m */; };
 		A3BEFD421FAAFAEA00AA5621 /* ZYPushTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BEFD411FAAFAEA00AA5621 /* ZYPushTableViewController.m */; };
 		A3E8F3781FA96A0E00C1AC2F /* ZYSaveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E8F3771FA96A0E00C1AC2F /* ZYSaveTool.m */; };
@@ -125,6 +127,10 @@
 		A3B71BB21FAB6E7800E4B7AF /* ZYBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBaseTableViewController.m; sourceTree = "<group>"; };
 		A3B71BB41FAB7A9F00E4B7AF /* ZYAwardTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYAwardTableViewController.h; sourceTree = "<group>"; };
 		A3B71BB51FAB7A9F00E4B7AF /* ZYAwardTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYAwardTableViewController.m; sourceTree = "<group>"; };
+		A3BEADAE1FAC61A900BE7956 /* ZYLuckyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYLuckyViewController.h; sourceTree = "<group>"; };
+		A3BEADAF1FAC61A900BE7956 /* ZYLuckyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYLuckyViewController.m; sourceTree = "<group>"; };
+		A3BEADB41FAC676600BE7956 /* ZYLuckyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYLuckyView.h; sourceTree = "<group>"; };
+		A3BEADB51FAC676600BE7956 /* ZYLuckyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYLuckyView.m; sourceTree = "<group>"; };
 		A3BEFD3D1FAAECAE00AA5621 /* ZYSettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYSettingTableViewCell.h; sourceTree = "<group>"; };
 		A3BEFD3E1FAAECAE00AA5621 /* ZYSettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYSettingTableViewCell.m; sourceTree = "<group>"; };
 		A3BEFD401FAAFAEA00AA5621 /* ZYPushTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPushTableViewController.h; sourceTree = "<group>"; };
@@ -301,6 +307,8 @@
 				A31EB6A71FA5B0360024AD0B /* ZYDiscoverTableTableViewController.storyboard */,
 				A31EB6A91FA5BE8B0024AD0B /* ZYBuyViewController.h */,
 				A31EB6AA1FA5BE8B0024AD0B /* ZYBuyViewController.m */,
+				A3BEADAE1FAC61A900BE7956 /* ZYLuckyViewController.h */,
+				A3BEADAF1FAC61A900BE7956 /* ZYLuckyViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -317,6 +325,8 @@
 			children = (
 				A31EB6AC1FA5C0390024AD0B /* ZYTitleViewButton.h */,
 				A31EB6AD1FA5C0390024AD0B /* ZYTitleViewButton.m */,
+				A3BEADB41FAC676600BE7956 /* ZYLuckyView.h */,
+				A3BEADB51FAC676600BE7956 /* ZYLuckyView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -669,6 +679,7 @@
 				A31EB6AB1FA5BE8B0024AD0B /* ZYBuyViewController.m in Sources */,
 				A3E8F3781FA96A0E00C1AC2F /* ZYSaveTool.m in Sources */,
 				A3BEFD421FAAFAEA00AA5621 /* ZYPushTableViewController.m in Sources */,
+				A3BEADB61FAC676600BE7956 /* ZYLuckyView.m in Sources */,
 				A3ACE19E1FA0951E00D043D0 /* ZYDiscoverTableTableViewController.m in Sources */,
 				A3ACE1A41FA0956400D043D0 /* ZYMyLotteryViewController.m in Sources */,
 				A3B71BB31FAB6E7800E4B7AF /* ZYBaseTableViewController.m in Sources */,
@@ -684,6 +695,7 @@
 				A31EB6AE1FA5C0390024AD0B /* ZYTitleViewButton.m in Sources */,
 				A31EB6A31FA4EBD30024AD0B /* ZYArenaNavViewController.m in Sources */,
 				A3ACE1AA1FA1892E00D043D0 /* ZYTabBar.m in Sources */,
+				A3BEADB01FAC61A900BE7956 /* ZYLuckyViewController.m in Sources */,
 				A316DE501FAB241500772273 /* MBProgressHUD.m in Sources */,
 				A3A061AD1FA2021400923CB5 /* ZYCover.m in Sources */,
 				A34C7B2C1FA70CD200095854 /* ZYGuidePageCollectionViewController.m in Sources */,

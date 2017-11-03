@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xiaopingguo" translatesAutoresizingMaskIntoConstraints="NO" id="G06-0W-Jsy">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lucky_lots_tuhao" translatesAutoresizingMaskIntoConstraints="NO" id="G06-0W-Jsy">
                     <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -36,6 +36,6 @@
     </objects>
     <resources>
         <image name="alphaClose" width="19" height="19"/>
-        <image name="xiaopingguo" width="200" height="200"/>
+        <image name="lucky_lots_tuhao" width="320" height="300"/>
     </resources>
 </document>
