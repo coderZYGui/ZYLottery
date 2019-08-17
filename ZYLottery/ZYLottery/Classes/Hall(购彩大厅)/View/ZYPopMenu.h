@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 // MyBlock 的类型 void(^)()
-typedef void(^MyBlock)();
+typedef void(^MyBlock)(void);
 
 @class ZYPopMenu,ZYCover;
 

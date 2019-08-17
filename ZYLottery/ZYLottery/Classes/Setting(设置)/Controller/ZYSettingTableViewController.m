@@ -96,8 +96,8 @@
     NSArray *items = @[item11,item12,item13,item14];
     
     ZYSettingGroup *group = [ZYSettingGroup groupWithItem:items];
-    group.headerTitle = @"奉化之墓庐依然";
-    group.footerTitle = @"溪口之花草无恙";
+    group.headerTitle = @"会当凌绝顶";
+    group.footerTitle = @"一览众山小";
     
     [self.groups addObject:group];
 }

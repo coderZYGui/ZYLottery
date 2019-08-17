@@ -8,12 +8,6 @@
 
 #import "ZYPushTableViewController.h"
 
-#import "ZYSettingItem.h"
-#import "ZYSettingGroup.h"
-#import "ZYSettingArrowItem.h"
-#import "ZYSettingSwitchItem.h"
-#import "ZYSettingTableViewCell.h"
-
 #import "ZYScoreTableViewController.h"
 #import "ZYAwardTableViewController.h"
 

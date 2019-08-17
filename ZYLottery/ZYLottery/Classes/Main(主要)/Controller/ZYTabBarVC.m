@@ -105,6 +105,7 @@
 }
 
 #pragma -mark ZYTabBarDelegate
+// 跳转到指定的控制器
 - (void)tabBar:(ZYTabBar *)tabBar index:(NSInteger)index
 {
 //    NSLog(@"%ld",index);
@@ -136,9 +137,6 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ZYDiscoverTableTableViewController" bundle:nil];
     //3.2 加载storyboard箭头指向的控制器
     ZYDiscoverTableTableViewController *discoveryVC = [storyboard instantiateInitialViewController];
-    
-
-    
     [self addChildViewController:discoveryVC];
     [self setupOneChildViewController:discoveryVC image:[UIImage imageNamed:@"TabBar_Discovery_new"] selectImage:[UIImage imageNamed:@"TabBar_Discovery_selected_new"] title:@"发现"];
     

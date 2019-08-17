@@ -199,6 +199,7 @@ static NSString * const reuseIdentifier = @"Cell";
     
 //    NSLog(@"%@",cell);
     
+    // 判断哪个cell设置立即进入按钮
     [cell setIndexPath:indexPath count:ZYPage];
     
     return cell;

@@ -14,6 +14,7 @@
 
 @interface ZYSettingTableViewCell : UITableViewCell
 
+// 设置cell的内容
 + (instancetype)cellWithTableView:(UITableView *)tableView;
 
 + (instancetype)cellWithTableView:(UITableView *)tableView cellStyle:(UITableViewCellStyle)cellStyle;

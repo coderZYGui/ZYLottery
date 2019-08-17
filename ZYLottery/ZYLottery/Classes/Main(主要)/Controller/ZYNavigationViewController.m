@@ -61,9 +61,9 @@
         [bar setTintColor:[UIColor whiteColor]];
         
         // 获取的导航条按钮的标识
-        UIBarButtonItem *item = [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[self]];
+//        UIBarButtonItem *item = [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[self]];
         // 修改返回按钮标题的位置
-        [item setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -100) forBarMetrics:UIBarMetricsDefault];
+//        [item setBackButtonTitlePositionAdjustment:UIOffsetMake(0, 0) forBarMetrics:UIBarMetricsDefault];
         
     }
     
@@ -96,7 +96,7 @@
     UIScreenEdgePanGestureRecognizer *gest = self.interactivePopGestureRecognizer;
     
     //2. 自己添加手势
-//    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleNavigationTransition:)];
+//    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:??? action:@selector(handleNavigationTransition:)];
 //    
 //    [self.view addGestureRecognizer:pan];
     

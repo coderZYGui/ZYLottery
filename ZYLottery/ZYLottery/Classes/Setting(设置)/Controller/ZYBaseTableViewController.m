@@ -10,6 +10,7 @@
 
 @interface ZYBaseTableViewController ()
 
+
 @end
 
 @implementation ZYBaseTableViewController
